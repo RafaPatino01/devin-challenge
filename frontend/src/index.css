@@ -1,0 +1,308 @@
+/* GitHub Primer Dark Theme with IFTTT-style oversized layout */
+:root {
+  /* GitHub Primer Dark Colors */
+  --color-canvas-default: #0d1117;
+  --color-canvas-overlay: #161b22;
+  --color-canvas-inset: #21262d;
+  --color-canvas-subtle: #21262d;
+  
+  --color-fg-default: #f0f6fc;
+  --color-fg-muted: #7d8590;
+  --color-fg-subtle: #6e7681;
+  
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-border-subtle: #21262d;
+  
+  --color-btn-primary-bg: #238636;
+  --color-btn-primary-hover: #2ea043;
+  --color-btn-primary-text: #ffffff;
+  
+  --color-btn-secondary-bg: #21262d;
+  --color-btn-secondary-hover: #30363d;
+  --color-btn-secondary-text: #f0f6fc;
+  
+  --color-accent-emphasis: #1f6feb;
+  --color-success-emphasis: #238636;
+  --color-danger-emphasis: #da3633;
+  --color-closed-emphasis: #8250df;
+  
+  /* IFTTT-style oversized spacing */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-xxl: 64px;
+  --space-xxxl: 96px;
+  
+  /* Oversized typography */
+  --text-xs: 14px;
+  --text-sm: 16px;
+  --text-md: 20px;
+  --text-lg: 24px;
+  --text-xl: 32px;
+  --text-xxl: 48px;
+  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  color: var(--color-fg-default);
+  background-color: var(--color-canvas-default);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-canvas-default);
+  color: var(--color-fg-default);
+}
+
+/* IFTTT-style centered container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--space-xl);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Large, chunky buttons */
+.btn-primary {
+  background-color: var(--color-btn-primary-bg);
+  color: var(--color-btn-primary-text);
+  border: 1px solid var(--color-btn-primary-bg);
+  border-radius: 12px;
+  padding: var(--space-md) var(--space-xl);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  min-height: 64px;
+  min-width: 200px;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-btn-primary-hover);
+  border-color: var(--color-btn-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(35, 134, 54, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--color-btn-secondary-bg);
+  color: var(--color-btn-secondary-text);
+  border: 1px solid var(--color-border-default);
+  border-radius: 12px;
+  padding: var(--space-md) var(--space-xl);
+  font-size: var(--text-md);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  min-height: 56px;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-btn-secondary-hover);
+  border-color: var(--color-border-default);
+  transform: translateY(-1px);
+}
+
+/* Oversized typography */
+h1 {
+  font-size: var(--text-xxl);
+  font-weight: 600;
+  margin: 0 0 var(--space-xl) 0;
+  text-align: center;
+  color: var(--color-fg-default);
+}
+
+h2 {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin: 0 0 var(--space-lg) 0;
+  color: var(--color-fg-default);
+}
+
+h3 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin: 0 0 var(--space-md) 0;
+  color: var(--color-fg-default);
+}
+
+p {
+  font-size: var(--text-md);
+  line-height: 1.6;
+  margin: 0 0 var(--space-md) 0;
+  color: var(--color-fg-muted);
+}
+
+/* Large cards for repos and issues */
+.card {
+  background-color: var(--color-canvas-inset);
+  border: 1px solid var(--color-border-default);
+  border-radius: 16px;
+  padding: var(--space-xl);
+  margin-bottom: var(--space-lg);
+  width: 100%;
+  max-width: 600px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--color-accent-emphasis);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(31, 111, 235, 0.15);
+}
+
+.card-title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin: 0 0 var(--space-sm) 0;
+  color: var(--color-fg-default);
+}
+
+.card-description {
+  font-size: var(--text-md);
+  color: var(--color-fg-muted);
+  margin: 0 0 var(--space-md) 0;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: var(--text-sm);
+  color: var(--color-fg-subtle);
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1, 4, 9, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--space-lg);
+}
+
+.modal {
+  background-color: var(--color-canvas-overlay);
+  border: 1px solid var(--color-border-default);
+  border-radius: 16px;
+  padding: var(--space-xxl);
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 16px 64px rgba(1, 4, 9, 0.4);
+}
+
+.modal h2 {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: var(--space-lg);
+}
+
+.form-label {
+  display: block;
+  font-size: var(--text-md);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+  color: var(--color-fg-default);
+}
+
+.form-input {
+  width: 100%;
+  padding: var(--space-md);
+  font-size: var(--text-md);
+  background-color: var(--color-canvas-default);
+  border: 1px solid var(--color-border-default);
+  border-radius: 8px;
+  color: var(--color-fg-default);
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-accent-emphasis);
+  box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.3);
+}
+
+/* GitHub-style labels */
+.issue-labels {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+  margin: var(--space-sm) 0;
+}
+
+.issue-label {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  display: inline-block;
+}
+
+.issue-state-open {
+  color: var(--color-success-emphasis);
+}
+
+.issue-state-closed {
+  color: var(--color-closed-emphasis);
+}
+
+/* Loading state */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xxl);
+  font-size: var(--text-lg);
+  color: var(--color-fg-muted);
+}
+
+/* Error state */
+.error {
+  background-color: rgba(218, 54, 51, 0.1);
+  border: 1px solid var(--color-danger-emphasis);
+  border-radius: 8px;
+  padding: var(--space-md);
+  color: var(--color-danger-emphasis);
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
