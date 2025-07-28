@@ -8,6 +8,11 @@ This project demonstrates the capabilities of Devin, an AI software engineer, th
 
 📹 **[Watch the full Devin demo here](https://www.loom.com/share/f474870f621941ae998c2278c65e334d)**
 
+## Related Repository
+
+🔗 **[Task Manager Application (Fixed by Devin)](https://github.com/RafaPatino01/simple-todo-list)**  
+The actual task manager application that was analyzed and fixed by Devin during the assessment.
+
 ## Project Structure
 
 ```
